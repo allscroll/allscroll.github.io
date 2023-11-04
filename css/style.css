@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: 1240px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+.main {
+    width: 65%;
+    padding: 35px;
+}
+.sidebar {
+    width: 30%;
+    padding: 35px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    list-style-type: none;
+}
+
+@media screen and ( max-width: 470px ) {
+    .container {
+        flex-direction: column;
+    }
+    .main, .sidebar {
+        width: 100%;
+    }
+}
