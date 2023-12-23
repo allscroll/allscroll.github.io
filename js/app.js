@@ -7,7 +7,7 @@ const aMenuList = [
     // { 'text': 'Bitrix', 'href': '' },
 ];
 
-const menuContainer = document.getElementById( 'sidebar' );
+const menuContainer = document.getElementById( '_top-menu' );
 const menuList = document.createElement( 'ul' );
 
 menuContainer.appendChild( menuList );
