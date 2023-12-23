@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - AllScroll.github.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div id="sidebar"></div>
+    <div class="main">
+        <div id="toc"></div>
+
+
+        <h2 class="title">Переменные</h2>
+        <div class="section">
+            <p><strong>let</strong></p>
+            <p><strong>const</strong></p>
+
+            <p>При получении ноды в переменную можно пользоваться const</p>
+
+            <p>свойство defer для тега script
+            позволяет откладывать загрузку скрипта до момента, когда весь html загрузится</p>
+        </div>
+
+        <h2 class="title">Синтаксис</h2>
+        <div class="section">
+
+        </div>
+
+        <h2 class="title">Массивы</h2>
+        <div class="section">
+            <p>Массивы лучше объявлять через const</p>
+            <p>const array = [ 1, 2, 3, 4, 5 ]</p>
+
+            <p>array.length - длина масссива</p>
+            <p>array[ 1 ] - обращение к индексу</p>
+            <p>array[ array.length - 1 ] - последний элемент массива</p>
+
+            <p>array.splice(  )</p>
+
+            <p><strong>array.map()</strong> - перебирает все элементы массива. Всегда нужно использовать return</p>
+            <p>Возвращает новый массив с измененными данными.</p>
+            <pre>
+                array.map( function ( item, index ) {
+                    return item * 2
+                } )
+            </pre>
+            <p>Работает быстрее forEach, т.к. возвращает новый массив, а не мутирует исходный.</p>
+
+            <p><strong>array.forEach() - </strong></p>
+            <p>Его лучше использовать, если нужно выводить данные, без изменения массива</p>
+
+            <p><strong>for ( let el in object )</strong> - удобно перебирать свойства объектов или объкт объектов. Похоже не подходит для перебора массива объектов.</p>
+
+            <p><strong>array.includes() -</strong></p>
+            <p><strong>array.indexOf() -</strong></p>
+            <p><strong>array.find() -</strong> Поиск по массиву объектов</p>
+            <p>Возвращать надо true/false</p>
+            <p><strong>array.findIndex() -</strong> Поиск по массиву объектов, но возвращает индекс найденного объекта, либо -1, если не найдено</p>
+        </div>
+
+        <h2 class="title">Строки, числа, даты</h2>
+        <div class="section">
+
+            <p><strong></strong></p>
+            <p><strong></strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
